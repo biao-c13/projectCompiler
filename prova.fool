@@ -1,0 +1,714 @@
+
+let
+    int fact(int a){
+        if a==0 then { 1 }
+        else { a * fact(a-1) } ;
+    };
+
+in
+ fact(4) ;
+
+/*
+class p(){
+    int ss(){ 8;}
+    int bb(q a){a.ss();}
+}
+
+class  q extends p (){
+    int ss(){ 7 ;}
+}
+
+let p x = new p() ; q y = new q() ;
+in x.bb(y) ;
+*/
+
+/*
+
+class p(){
+    int bb(int a){a+6;}
+}
+
+class  q extends p (){
+    int ss(){ 7 ;}
+}
+
+let q x = new q() ; int w=5;
+in x.bb(w) ;
+
+*/
+/*
+class p(){
+    int ss(){ 8;}
+    int bb(p a){a.ss();}
+}
+
+class  q extends p (){
+    int ss(){ 7 ;}
+}
+
+let p x = new p() ; q y = new q() ;
+in x.bb(y) ;
+*/
+
+/*
+class p(){
+    int bb(int a){a+6}
+}
+
+class  q extends p (){
+    int ss(){ 7 ;}
+}
+
+let p x = new p() ; int w=5;
+in x.bb(w) ;*/
+
+/*
+class day(){
+    int ss(){ 5;}
+}
+
+class p(){
+    int ss(){ 5;}
+}
+
+
+let
+    p x = new p() ;
+in
+    x.ss();
+
+
+*/
+
+
+/*
+let
+    int j=5;
+
+    int c=1;
+
+    int day(int a){
+        a+1;
+    };
+
+    int ciao(int d){
+        day(d)+9;
+    };
+
+    int me(int v){
+        ciao(v);
+    };
+
+in
+if j<=6  then {me(j)+2 } else { c+4 };
+
+*/
+
+/*
+let
+    int j=5;
+
+    int c=1;
+
+    int day(int a){
+        a+2;
+    };
+
+    int ciao(int d){
+        day(d)+1;
+    };
+
+in
+if j<=6  then {ciao(j)+2 }else{ c+4 };
+
+*/
+
+/*
+class p(){
+    int ss(){ 5;}
+    int bb(p a){a.ss();}
+}
+
+class  q extends p (){
+    int ss(){ 7 ;}
+}
+
+let p x = new p() ; q y = new q() ;
+in x.bb(y) ;
+*/
+
+/*
+let int b=1; bool e=true; int m=5;
+
+    int mer(int u){
+        u+31;
+    };
+    int ciao(int a,int d){
+        d+0;
+    };
+
+    int day(int b,int a){
+        b+11;
+    };
+
+    int aw(int a){a;};
+
+in b = m + ciao(2,3);
+*/
+
+/*
+let int b=5; bool e=true; int m=7;
+int ciao(int a){
+ a+4;
+};
+
+int aw(int a){a+5;};
+in b = ciao(m);
+*/
+
+/*
+class p(int a,int p,int m,int k){
+int y=6;
+int ss(int a){a+5;}
+int bb(int a){a+5;}
+}
+
+class  aa extends p (int a, int p){
+int y=6;
+int bb(int a){a+5;}
+int gg(int a){a+5;}
+int ww(int a){a+5;}
+}
+
+class  aaa extends aa(int a, int p){
+int y=6;
+int ciao(int a){
+ a+4;
+}
+}
+
+class  bbb extends aa(int a, int p){
+int y=6;
+int iao(int a){
+ a+4;
+}
+}
+
+
+let int b=1; bool e=true; int m=7;
+int ciao(int a){
+ a+4;
+};
+
+int aw(int a){a+5;};
+in m+ciao(2);
+
+
+*/
+/*
+let int b=5; bool e=true; int m=7;
+int ciao(int a){
+ a+4;
+};
+
+int aw(int a){a+5;};
+in b = ciao(m);
+
+*/
+/*
+let int a=5; bool e=true;int m=6; int ciao(int a){
+ a+4;
+};
+int aw(int a){a+5;};
+in a + 2;
+*/
+/*class ciao(){
+int ciao (int a){a;}
+int a=5;
+}
+let int a=5; bool e=true;int m=6; int ciao(int a){
+ a+4;
+};
+int aw(int a){a+5;};
+in a + 2;
+*/
+
+
+
+
+/*
+let int a=5; bool e=true; in a >= 2;*/
+/*
+class  aaa(int a, int p){
+int y=6;
+int aw(int a){a+5;}
+}
+
+class aa extends aaa(saluti y,saluti b){
+int g=4;
+int c(int a){a+5;}
+me bi(int a, bool b){a=5;}
+}
+
+class saluti extends aa(int a){
+int k=6;
+bool a(aa a,aa v){a;}
+aa lou(int a){a=5;}
+}
+
+class bb extends aa(int a, int b){int k=6;}
+
+let int j=5;
+    saluti me=new saluti(j);
+    aa poii= new saluti(j);
+    bb hh=new bb(j,j);
+    int ciao(aa f,aa g){
+    let aa m=f;
+    in m=g;};
+in
+
+poii =if j<=6  then {me }else{ poii };
+
+*/
+/*
+class  aaa(int a, int p){
+int y=6;
+}
+
+class aa extends aaa(int y,int b){
+int g=4;
+int a(int a){a+5;}
+me bi(int a, bool b){a=5;}
+}
+
+class saluti(int a, int c){
+int k=6;
+}
+
+class bb extends aa(){int k=6;}
+
+let int j=5; bb a=new  int ciao(bb f,bb g){ let aa m=f; in m=g;};in ciao(j,j);
+*/
+
+/*
+class day(int a, int p){
+           int y=6;
+    }
+
+class  week extends day (int a, int p){
+int y=6;
+}
+let int a=5; week ciao(int a){a;}; in a=true;
+*/
+/*
+class day(int a, int p){
+           int y=6;
+    }
+
+class  aaa(int a, int p){
+int y=6;
+}
+
+class aa extends aaa(int y,int b){
+int g=4;
+int a(int a){a+5;}
+me bi(int a, bool b){a=5;}
+}
+
+class saluti extends aa(int a, int c){
+int k=6;
+}
+
+class bb extends aa(){
+         int g=4;
+         int a(int a){a+5;}
+         me bb(bb a, bb b){a=5;}
+}
+
+let int j=5;  int ciao(bb f){ let bb c=f; aa p=f; aaa m=new bb(p,p); in 5+2;};
+
+in aa.a();*/
+
+/*
+class  aaa(int a, int p){
+int y=6;
+}
+
+class aa extends aaa(int y,int b){
+int g=4;
+int a(int a){a+5;}
+me bi(int a, bool b){a=5;}
+}
+
+class saluti extends aa(int a, int c){
+int k=6;
+}
+
+class bb extends aa(){int k=6;}
+
+let int j=5;  int ciao(bb f){ let aaa m=f; in 5+2;};in aa.a();
+*/
+
+/*
+class ciao (int y,int b){
+int g=4;
+int a(int a){a+5;}
+me bi(int a, bool b){a=5;}
+}
+class saluti extends ciao(int a, int c){
+int k=6;
+}
+class tu extends ciao(){int k=6;}
+let tu j=5;  int ciao(){  5+2;};in ciao.a();
+*/
+
+/*
+class ciao (int y,int b){
+int g=4;
+int a(){a+5;}
+}
+class saluti extends ciao(int a, int c){
+int k=6;
+}
+let tu j=5;  int ciao(){  5+2;};in ciao();
+
+*/
+/*
+class ciao (bool y,int b){
+int l=y;
+int a=6;
+int a(){a+b;}
+}
+class saluti extends ciao(int a, int c){
+int p=a;
+}
+*/
+/*
+let io a=5; in a;
+*/
+/*
+let int prg (int a,bool c){
+a=5;
+};
+int a=3;
+bool e=true;
+in prg(a, e);
+*/
+/*
+let bool a=true; int a=5; int b=5; in
+a && 9;
+*/
+/*
+class pr(){
+int pl(int a){a=5;}
+}
+class prg extends pr(){
+
+}
+let int prg (int a,int b){
+a=5;
+};
+int fu(int p){
+a+4;
+};
+in prg.pl();
+*/
+/*
+class prg(){
+int pl(int w){a=5;}
+}
+let int prg (int a,int b){
+a=5;
+};
+int fu(int p){
+a+4;
+};
+in prg.pl(v);
+*/
+/*class prg(){
+}
+let int prg (int a,int b){
+a=5;
+};
+int fu(int p){
+a+4;
+};
+in prg.pl();
+*/
+
+/*
+let int prg (int a,int b){
+a=5;
+};
+int fu(int pp){
+a+4;
+};
+int p=5;
+in pg(p);
+*/
+/*let int b=5;
+in if a then {a} else
+{a};
+*/
+/*class co(){
+}
+class ciao extends co(int a){
+int a=5;
+int b=6;
+bool d=2;
+int ci (int f,bool s, int c){
+b;}
+}
+let bool a=true;in
+a=2;
+*/
+
+/*class co(){
+}
+class ciao extends co(int a){
+int a=5;
+int b=6;
+bool d=2;
+int ci (int f,bool s, int c){
+b;}
+}
+let int a=2;in
+a=bool;
+*/
+/*
+class ciao(int a){
+int a=5;
+int b=6;
+bool d=2;
+int ci (int f,bool s, int c){
+b;}
+}
+let int ap=5;in
+a=5;
+
+*/
+
+/*
+class ciao(int a){
+int a=5;
+int b=6;
+bool d=2;
+int ci (int f,bool s, int c){
+b;}
+}
+class p(int a){
+int a=5;
+}
+class ciao(bool a ){
+}
+
+*/
+
+
+/*
+class ciao(int a){
+int a=5;
+int b=6;
+bool d=2;
+int ci (int f,bool s, int c){
+b;}
+}
+*/
+
+/*
+class ciao(int a){
+int a=5;
+int c=6;
+bool d=2;
+int ci (){
+b;}
+}
+*/
+/*
+let int ciao (int a, bool c){
+let int l=2;in
+a=5;
+};
+int a=5;in a;
+
+*/
+/*let int a=5;
+int c=4;
+int a=3;
+in a+5;
+*/
+/*a+5;*/
+
+/*
+class ciao (int a)*/
+/*a=new ciao (a,b);*/
+
+/*let
+int ciao (int a) {
+    let int a =3; in
+    a=5;
+};
+in
+a=4;*/
+
+/*
+if a+2-2 then {a=2;b=3;d=5;a=e;} else{b=2;};
+*/
+/*
+let int ciao (int a,bool b,void c){
+a=2;
+}; in
+ciao.ciao =3+4;
+*/
+/*
+let
+  int x = 2;
+in x;
+
+
+let
+  int y = 5+2;
+  bool f(int n, int m){
+    let
+      int x = m;
+  in x==y;};
+in
+  print (
+    if f(y,8)
+      then { false }
+      else { 10 }
+  );
+
+*/
+
+
+
+/* SERBATOIO ESEMPI
+
+  print(5+4) ;
+
+
+let
+  int y = 5+2;
+  bool f(int n, int m)
+    let
+      int x = m;
+  in x==y;
+in
+  print (
+    if f(y,8)
+      then { false }
+      else { 10 }
+  );
+
+let int x = 3; bool y = true ; in print (x-2) ;
+
+let int foo(int x) 
+if (x==0) then { print(true) } 
+else { print(false) } ;
+in print(foo(0));
+
+let  int fact(int n) 
+    let int foo(int n) n+1 ; in 
+    if (n==0) then { 1 } else { n*foo(n - 1) } ;
+in print(fact(3)) ;
+
+let int fact(int n) if (n==0) { 1 } else { n*fact(n-1) } ;
+in print(fact(3)) ;
+
+let int x = 3; in print (x+2);
+
+let
+  int x = 2;
+in
+  print (x);
+
+
+let
+  int x = 1;
+in
+  print (x);
+
+let
+  int x = 1;
+  bool b = true;
+in
+  print (if (b) then { x+1 } else { x+2 });
+
+let
+  bool f(int n, int  m)
+    let
+      int x = m;
+      int y = 6;
+  in x==y;
+in
+  print (y );
+
+let
+  int x = 1;
+  bool b = false;
+in
+  print (if (b) then { x+1 } else { x+2 });
+
+let
+  int x = 1;
+  bool b = true;
+in
+  print (if (b) then { x+1 } else { x+2 });
+---------------
+let
+  int f( int i, int j) i+j;
+in
+  print (f(3,5));
+----------------
+let
+  int y = 5+2;
+  bool f(int n, int m)
+    let
+      int x = m;
+  in x==y;
+in
+  print (
+    if f(y,8)
+      then { false }
+      else { 10 }
+  );
+
+------------- OLD SYNTAX
+
+let var x:int = 1 ; in print(x+4) ;
+
+-------------
+let 
+  var x:int = 1;
+  var b:bool = false;
+in
+  print (if (b) then { x+1 } else { x+2 }); 
+--------------
+let 
+  var x:int = 1;
+  var b:bool = true;
+in
+  print (if (b) then { x+1 } else { x+2 });
+---------------
+
+let 
+  fun f:int (i:int, j:int) i+j;
+in
+  print (f(3,5));
+*/
+
+/*----------------
+let
+  var y:int = 5+2;
+  fun f:bool (n:int, m:int)
+    let 
+      var x:int = m;
+  in x==y;   
+in  
+  print ( 
+    if f(y,8) 
+      then { false }
+      else { 10 }
+  ); 
+*/
