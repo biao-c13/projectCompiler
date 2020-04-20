@@ -5,8 +5,8 @@ The project consists in the realization of a compiler for a language whose synta
 
 //star Grammar FOOL
 
-fool   : exp SEMIC                 
-       | let exp SEMIC             
+fool   : exp SEMIC             | let exp SEMIC             
+
 let    : LET (dec SEMIC)+ IN ;
 
 vardec  : type ID ;
@@ -15,8 +15,8 @@ varasm     : vardec ASM exp ;
 
 fun    : type ID LPAR ( vardec ( COMMA vardec)* )? RPAR (let)? exp ;
 
-dec   : varasm          
-      | fun              
+dec   : varasm          | fun              
+
 type   : INT  | BOOL ;  
 
     
@@ -26,12 +26,11 @@ term : left=factor (TIMES right=term)?;
    
 factor : left=value (EQ right=value)?;     
    
-value  : INTEGER                           #intVal
-      | ( TRUE | FALSE )                   #boolVal
-      | LPAR exp RPAR                      #baseExp
-          | IF cond=exp THEN CLPAR thenBranch=exp CRPAR ELSE CLPAR elseBranch=exp CRPAR  #ifExp
-          | ID                                             #varExp
-          | ID ( LPAR (exp (COMMA exp)* )? RPAR )?         #funExp    ; 
+value  : INTEGER                         | ( TRUE | FALSE )                   
+      | LPAR exp RPAR                      
+          | IF cond=exp THEN CLPAR thenBranch=exp CRPAR ELSE CLPAR elseBranch=exp CRPAR  
+          | ID                                             
+          | ID ( LPAR (exp (COMMA exp)* )? RPAR )?             ; 
 
 *------------------------------------------------------------------
 //end Grammar Fool
