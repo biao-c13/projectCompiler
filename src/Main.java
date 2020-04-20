@@ -34,30 +34,26 @@ public class Main {
         if(lexer.lexicalErrors > 0){
         	System.out.println("The program was not in the right format. Exiting the compilation process now");
         }else{
-
-			FOOLParser parser=new FOOLParser(tokens);
-            FoolVisitorImpl visitor=new FoolVisitorImpl();
-            Node ast=visitor.visit(parser.prog());
-            System.out.println(ast.toPrint(""));   //print ast
-/*
-    catch errors: multiple declaration, undeclared variable, type mismatch, wrong arguments
+		//star TYPE-CHECKER
+		FOOLParser parser=new FOOLParser(tokens);
+            	FoolVisitorImpl visitor=new FoolVisitorImpl();
+            	Node ast=visitor.visit(parser.prog());
+            	System.out.println(ast.toPrint(""));   
+/*	check the correct use of types
+    catch errors: multiple declaration, undeclared variable, wrong arguments etc。。。
  */
 
-            System.out.println("    \n\n       semantic analysis: \n\n");
-            Environment env=new Environment();
+           	 System.out.println("    \n\n       semantic analysis: \n\n");
+           	 Environment env=new Environment();
+           	 ArrayList<SemanticError> err = ast.checkSemantics(env);
 
-            ArrayList<SemanticError> err = ast.checkSemantics(env);
+           	 System.out.println("\n                parser  \n");
+           	 System.out.println(err);
+		Node type=ast.typeCheck();
 
-            System.out.println("\n                parser  \n");
-            System.out.println(err);
-
-            Node type=ast.typeCheck();
-
-            //start generation of code
+           
+	//start generation of machine/object code (the code shoul be execute for machine SVM)
             String code=ast.codeGeneration();
-           // System.out.println(code);
-
-
             BufferedWriter out = new BufferedWriter(new FileWriter(fileName+".asm"));
             out.write(code);
             out.close();
@@ -68,7 +64,6 @@ public class Main {
             CommonTokenStream tokensASM = new CommonTokenStream(lexerASM);
             SVMParser parserASM = new SVMParser(tokensASM);
 
-            //parserASM.assembly();
             SVMVisitorImpl visitorSVM = new SVMVisitorImpl();
             visitorSVM.visit(parserASM.assembly());
             System.out.println("You had: "+lexerASM.lexicalErrors+" lexical errors and "+parserASM.getNumberOfSyntaxErrors()+" syntax errors.");
