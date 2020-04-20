@@ -37,16 +37,16 @@ value  : INTEGER                         | ( TRUE | FALSE )
 
 This language is an object-oriented extension of functional language:
 
-  1)It is possible to declare classes and subclasses.
-  2)Classes contain
+1)It is possible to declare classes and subclasses.
+2)Classes contain
     ** fields (declared in the class or inherited from the super-class)
     ** methods (explicitly declared in the class or inherited from the super-class).
-  
+3) there is a void type, in addition to the class type.  
+
 
 The compiler must include a type-checker that checks the correct use of types.
+define and implement the typing rules for all constructs, in particular for the conditional.
 
-  1) there is a void type, in addition to the class type.
-  2)define and implement the typing rules for all constructs, in particular for the conditional.
 
 The compiler must generate code for a virtual executor called SVM (stack
 virtual machine) whose syntax is defined in the SVM.g file.
