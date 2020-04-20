@@ -5,6 +5,7 @@ The project consists in the realization of a compiler for a language whose synta
 
 //star Grammar Fool
 FOOL Grammar:
+
 fool   : exp SEMIC                 #singleExp
        | let exp SEMIC             #letInExp;
 let    : LET (dec SEMIC)+ IN ;
