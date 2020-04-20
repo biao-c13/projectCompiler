@@ -3,11 +3,10 @@ Creation of compilers (A compiler is a translator which transforms source langua
 
 The project consists in the realization of a compiler for a language whose syntax must include that of FOOL
 
-//star Grammar Fool
-FOOL Grammar:
+//star Grammar FOOL
 
-fool   : exp SEMIC                 #singleExp
-       | let exp SEMIC             #letInExp;
+fool   : exp SEMIC                 
+       | let exp SEMIC             
 let    : LET (dec SEMIC)+ IN ;
 vardec  : type ID ;
 varasm     : vardec ASM exp ;
