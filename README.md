@@ -8,12 +8,17 @@ The project consists in the realization of a compiler for a language whose synta
 fool   : exp SEMIC                 
        | let exp SEMIC             
 let    : LET (dec SEMIC)+ IN ;
+
 vardec  : type ID ;
+
 varasm     : vardec ASM exp ;
+
 fun    : type ID LPAR ( vardec ( COMMA vardec)* )? RPAR (let)? exp ;
-dec   : varasm           #varAssignment
-      | fun              #funDeclaration;
+
+dec   : varasm          
+      | fun              
 type   : INT  | BOOL ;  
+
     
 exp : left=term (PLUS right=exp)? ;
    
