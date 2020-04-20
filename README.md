@@ -50,3 +50,6 @@ The compiler must include a type-checker that checks the correct use of types.
 
 The compiler must generate code for a virtual executor called SVM (stack
 virtual machine) whose syntax is defined in the SVM.g file.
+
+
+the main file is located in /src/main
