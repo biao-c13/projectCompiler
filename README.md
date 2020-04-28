@@ -1,5 +1,5 @@
 # projectCompiler
-Creation of compilers (A compiler is a translator which transforms source language (high-level language) into object language (machine language))
+Creation of compiler(A compiler is a translator which transforms source language (high-level language) into object language (machine language))
 
 The project consists in the realization of a compiler for a language whose syntax must include that of FOOL
 
@@ -35,7 +35,7 @@ value  : INTEGER                         | ( TRUE | FALSE )
 *------------------------------------------------------------------
 //end Grammar Fool
 
-This language is an object-oriented extension of functional language:
+This language is an object-oriented language, extension of functional language:
 
 1)It is possible to declare classes and subclasses.
 2)Classes contain
